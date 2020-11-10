@@ -52,7 +52,18 @@ A place to go to order and design shirts.
 
 ## Languages Used
 
+* JavaScript
+
 ## Packages/Libraries
+
+* Express
+* EJS
+* Method-Override
+* Sequelize
+* PG (Postgres)
+* Dotenv
+* Bcryptjs
+* JSONwebtoken
 
 ## Contribute
 

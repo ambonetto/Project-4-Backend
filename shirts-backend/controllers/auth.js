@@ -7,8 +7,8 @@ require('dotenv').config();
 // importing the JWT library
 const jwt = require('jsonwebtoken');
 
-// importin; letting controllers know about the user model
-const User = require('../models').User;
+// importing; letting controllers know about the user model
+const User = require('../models').Users;
 
 // for post (creating a new user): sending the information back to the client
 const createNewUser= (req, res) => {

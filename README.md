@@ -64,6 +64,8 @@ A place to go to order and design shirts.
 * Dotenv
 * Bcryptjs
 * JSONwebtoken
+* Cors
+* Body-Parser
 
 ## Contribute
 

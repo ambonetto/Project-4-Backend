@@ -61,6 +61,7 @@ const verifyToken = (req, res, next) => {
 // will return something to be seen by the client
 app.use('/auth', routes.auth);
 app.use('/user', verifyToken, routes.user);
+app.use('/auth/verify', verifyToken, routes.auth);
 
 // running the app on a port 
 app.listen(process.env.PORT, () => {

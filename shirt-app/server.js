@@ -20,6 +20,26 @@ const app = express();
 app.use(express.urlencoded({extended: true}));
 app.use(methodOverride('_method'));
 
+// import cors
+const cors = require('cors');
+
+// import Body Parser
+const bodyParser = require('body-parser');
+
+// allowing for items to be passed thru
+const corsOptions = {
+    origin: ['http://localhost:3000'],
+    methods: "GET, POST, PUT, DELETE",
+
+    // allows session cookies to be sent back and forth
+    credentials: true
+}
+
+// middleware to pass information between backend and frontend
+// will return something to be seen by the client
+app.use(cors(corsOptions));
+app.use(bodyParser.json());
+
 // verify the token
 const verifyToken = (req, res, next) => {
     let token = req.headers['authorization'];

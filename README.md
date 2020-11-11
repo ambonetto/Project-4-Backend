@@ -69,7 +69,7 @@ A place to go to order and design shirts.
 
 ## Contribute
 
-**Source Code:** https://git.generalassemb.ly/ambonetto/Project-4
+**Source Code:** https://github.com/ambonetto/Project-4-Backend
 
 ## Issue and Resolutions
 

@@ -37,7 +37,7 @@ const createNewUser= (req, res) => {
                         id: newUser.id, 
                         username: newUser.username
                     }, 
-                    procces.env.JWT_SECRET,
+                    process.env.JWT_SECRET,
                     {
                         expiresIn: "30 days"
                     }

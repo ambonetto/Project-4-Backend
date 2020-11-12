@@ -16,7 +16,7 @@ const createNewUser = (req, res) => {
         if (err) {
             res.send(`Error: ${err}`)
         }
-
+        console.log(req)
         // pass in the password, salt value, and error (if there is one)
         bcrypt.hash(req.body.password, salt, (err, hashedPwd) => {
             if (err) {

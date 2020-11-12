@@ -3,10 +3,11 @@ const Shirt = require('../models').Shirts;
 
 // for get (show profile): sending the informaiton back to the client
 const allShirts = (req, res) => {
-    Shirts.findAll()
+    Shirt.findAll()
 
     // return the promise object
     .then(displayShirts => {
+        console.log(displayShirts)
         res.json(displayShirts);
     })
     .catch(err => {

@@ -11,7 +11,7 @@ const jwt = require('jsonwebtoken');
 const User = require('../models').Users;
 
 // for post (creating a new user): sending the information back to the client
-const createNewUser= (req, res) => {
+const createNewUser = (req, res) => {
     bcrypt.genSalt(10, (err, salt) => {
         if (err) {
             res.send(`Error: ${err}`)

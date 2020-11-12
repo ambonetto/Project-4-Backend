@@ -29,7 +29,7 @@ const bodyParser = require('body-parser');
 // allowing for items to be passed thru
 const corsOptions = {
     origin: ['http://localhost:3000'],
-    methods: "GET, POST, PUT, DELETE",
+    methods: "GET,POST,PUT,DELETE",
 
     // allows session cookies to be sent back and forth
     credentials: true
@@ -62,6 +62,7 @@ const verifyToken = (req, res, next) => {
 app.use('/auth', routes.auth);
 app.use('/user', verifyToken, routes.user);
 app.use('/auth/verify', verifyToken, routes.auth);
+app.use('/profile', verifyToken, routes.user);
 
 // running the app on a port 
 app.listen(process.env.PORT, () => {

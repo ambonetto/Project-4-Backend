@@ -1,5 +1,5 @@
 // importing; letting controllers know about the user model
-const User = require('../models').User;
+const User = require('../models').Users;
 
 // for get (show profile): sending the informaiton back to the client
 const userProfile = (req, res) => {
@@ -7,7 +7,10 @@ const userProfile = (req, res) => {
 
     // return the promise object
     .then(userProfile => {
-        res.json(userProfile)
+        res.json(userProfile);
+    })
+    .catch(err => {
+        res.send(`Error: ${err}`);
     })
 }
 
@@ -24,12 +27,37 @@ const editProfile = (req, res) => {
 
     // return the promise object
     .then(updateUser => {
-        res.json(updateUser)
+        User.findByPk(req.user.id)
+
+        // return the promise object
+        .then(userProfile => {
+            res.json(userProfile);
+        })
+    })
+    .catch(err => {
+        res.send(`Error: ${err}`);
+    })
+}
+
+// for delete (removing profile): sending the information back to the client
+const deleteProfile = (req, res) => {
+    // delete user profile
+    User.destroy({
+        where: {id: req.user.id}
+    })
+
+    // return the promise object
+    .then(() => {
+        res.send('Success');
+    })
+    .catch(err => {
+        res.send(`Error: ${err}`);
     })
 }
 
 // export all controllers
 module.exports = {
     userProfile,
-    editProfile
+    editProfile, 
+    deleteProfile
 }

@@ -29,9 +29,11 @@ const createNewUser= (req, res) => {
             // create a new User
             // create new User's password
             User.create(req.body)
+            console.log(req.body)
 
             // return the promise object
             .then(newUser => {
+                console.log(newUser)
                 const token = jwt.sign(
                     {
                         id: newUser.id, 

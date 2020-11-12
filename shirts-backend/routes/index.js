@@ -3,5 +3,5 @@
 module.exports = {
     auth: require('./auth'), 
     user: require('./user'),
-    shirt: require('/shirt')
+    shirt: require('./shirt')
 }

@@ -50,6 +50,7 @@ const createNewUser= (req, res) => {
 
                 // throw an error is the username is already taken
                 .catch(err => {
+                    console.log("I am here", err)
                     res.send(`Error: ${err}`);
                 })
             })

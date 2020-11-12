@@ -63,6 +63,7 @@ app.use('/auth', routes.auth);
 app.use('/user', verifyToken, routes.user);
 app.use('/auth/verify', verifyToken, routes.auth);
 app.use('/profile', verifyToken, routes.user);
+app.use('/shirts', verifyToken, routes.shirt)
 
 // running the app on a port 
 app.listen(process.env.PORT, () => {

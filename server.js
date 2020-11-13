@@ -30,6 +30,7 @@ const bodyParser = require('body-parser');
 const corsOptions = {
     // replacing localhost:3000 with publish surge app
     origin: ['http://towering-door.surge.sh'],
+    // origin: ['http://localhost:3000'],
     methods: "GET,POST,PUT,DELETE",
 
     // allows session cookies to be sent back and forth

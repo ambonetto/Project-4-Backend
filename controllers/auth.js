@@ -104,7 +104,7 @@ const userLogin = (req, res) => {
 // for get (verify User): sending the informaiton back to the client
 const verifyUser = (req, res) => {
     User.findByPk(req.user.id, {
-        attributes: ['id', 'username', 'email', 'name']
+        attributes: ['id', 'username', 'email', 'name', 'admin', 'password']
     })
     
     // return the promise object

@@ -29,7 +29,8 @@ const bodyParser = require('body-parser');
 // allowing for items to be passed thru
 const corsOptions = {
     // replacing localhost:3000 with publish surge app
-    origin: ['http://towering-door.surge.sh'],
+    //origin: ['http://towering-door.surge.sh'],
+    origin: ['http://localhost:3000'],
     methods: "GET,POST,PUT,DELETE",
 
     // allows session cookies to be sent back and forth
@@ -52,7 +53,7 @@ const verifyToken = (req, res, next) => {
 
         // set the decoded payload to req object as the user information (username, id)
         req.user = decodedUser;
-
+        console.log(req.user)
         // for controller to go to the next line of the code
         next();
     })
@@ -64,6 +65,7 @@ app.use('/auth', routes.auth);
 app.use('/user', verifyToken, routes.user);
 app.use('/auth/verify', verifyToken, routes.auth);
 app.use('/profile', verifyToken, routes.user);
+app.use('/placeorder', verifyToken, routes.design);
 
 // running the app on a port 
 app.listen(process.env.PORT, () => {

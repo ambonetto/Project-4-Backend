@@ -29,11 +29,9 @@ const createNewUser = (req, res) => {
             // create a new User
             // create new User's password
             User.create(req.body)
-            console.log(req.body)
 
             // return the promise object
             .then(newUser => {
-                console.log(newUser)
                 const token = jwt.sign(
                     {
                         id: newUser.id, 
@@ -49,12 +47,10 @@ const createNewUser = (req, res) => {
                     "token": token, 
                     "user": newUser
                 })
-
-                // throw an error is the username is already taken
-                .catch(err => {
-                    console.log("I am here", err)
-                    res.send(`Error: ${err}`);
-                })
+            })
+            // throw an error is the username is already taken
+            .catch(err => {
+                res.send(`Error: ${err}`);
             })
         })
     })
@@ -108,7 +104,7 @@ const userLogin = (req, res) => {
 // for get (verify User): sending the informaiton back to the client
 const verifyUser = (req, res) => {
     User.findByPk(req.user.id, {
-        attributes: ['id', 'username', 'email', 'name']
+        attributes: ['id', 'username', 'email', 'name', 'admin', 'password']
     })
     
     // return the promise object

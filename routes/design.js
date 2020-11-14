@@ -8,8 +8,8 @@ const router = express.Router();
 const ctrl = require('../controllers');
 
 // this is telling it what controller is taking care of it
-// this is displaying all shirts for the client
-router.get('/', ctrl.shirt.allShirts);
+// this is displaying a designs for the client
+router.get('/', ctrl.design.allDesign);
 
 // exporting router
 module.exports = router;

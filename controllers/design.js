@@ -1,4 +1,4 @@
-// importing; letting controllers know about the user model
+// importing; letting controllers know about the design model
 const Design = require('../models').Design;
 
 // for get (show profile): sending the informaiton back to the client

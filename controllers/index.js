@@ -3,5 +3,6 @@
 module.exports = {
     auth: require('./auth'), 
     user: require('./user'),
-    design: require('./design')
+    design: require('./design'),
+    type: require('./type')
 }

@@ -15,13 +15,16 @@ module.exports = {
       "Types",
       [
         {
-          type: "Long Sleeve"
+          type: "Long Sleeve",
+          image: "https://jiffyshirts.imgix.net/7e438a72a503ef.jpg?ixlib=rb-0.3.4&auto=format&fit=fill&fill=solid&trim-color=FFFFFF&trim=color&trim-tol=8&w=307&h=480&q=80&dpr=2"
         },
         {
-          type: "Short Sleeve"
+          type: "Short Sleeve",
+          image: "https://jiffyshirts1.imgix.net/b4a90b6068c2d2.png?ixlib=rb-0.3.4&auto=format&fit=fill&fill=solid&trim-color=FFFFFF&trim=color&trim-tol=8&w=307&h=480&q=80&dpr=2"
         },
         {
-          type: "Sweatshirt"
+          type: "Sweatshirt",
+          image: "https://jiffyshirts.imgix.net/8cd2483b2058cd.jpg?ixlib=rb-0.3.4&auto=format&fit=fill&fill=solid&trim-color=FFFFFF&trim=color&trim-tol=8&w=307&h=480&q=80&dpr=2"
         }
       ]
     )

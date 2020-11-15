@@ -14,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
 
       // Design can have only one Order
       // Design has a one-to-many relationship with Order
-      Design.belongsTo(models.Orders, {foreignKey: 'orderId'})
+      Design.belongsTo(models.Orders, {foreignKey: 'order_id'})
     }
   };
   Design.init({

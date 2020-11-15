@@ -9,7 +9,7 @@ const ctrl = require('../controllers');
 
 // this is telling it what controller is taking care of it
 // this is displaying all designs for the client
-router.get('/step1', ctrl.design.allDesign);
+router.get('/', ctrl.design.allDesign);
 
 // exporting router
 module.exports = router;

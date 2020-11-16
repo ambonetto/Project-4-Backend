@@ -11,5 +11,8 @@ const ctrl = require('../controllers');
 // this is displaying all designs for the client
 router.get('/', ctrl.design.allDesign);
 
+// this is creating a new design for the client
+router.post('/new', ctrl.design.newDesign);
+
 // exporting router
 module.exports = router;

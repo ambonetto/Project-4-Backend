@@ -20,7 +20,7 @@ module.exports = (sequelize, DataTypes) => {
   Design.init({
     name: DataTypes.STRING,
     image: DataTypes.STRING,
-    orderId: DataTypes.INTEGER,
+    order_id: DataTypes.INTEGER,
   }, {
     sequelize,
     modelName: 'Design',

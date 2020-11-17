@@ -29,7 +29,7 @@ const bodyParser = require('body-parser');
 // allowing for items to be passed thru
 const corsOptions = {
     // replacing localhost:3000 with publish surge app
-    origin: ['http://towering-door.surge.sh'],
+    origin: ['http://jb-designs.surge.sh'],
     // origin: ['http://localhost:3000'],
     methods: "GET,POST,PUT,DELETE",
 

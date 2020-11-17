@@ -27,8 +27,28 @@ const newDesign = (req, res) => {
     })
 }
 
+// for delete (delete design): sending the information back to the client
+const deleteDesign = (req, res) => {
+    Design.findByPk(req.params.designId)
+
+    // return the promise object
+    .then(foundDesign => {
+        Design.destroy({
+            where: {id: req.params.designId}
+        })
+        // return the promise object
+        .then(() => {
+            res.send('Success!');
+        })
+    })
+    .catch(err => {
+        res.send(`Error: ${err}`);
+    })
+}
+
 // export all controllers
 module.exports = { 
     allDesign,
-    newDesign
+    newDesign,
+    deleteDesign
 }

@@ -14,13 +14,13 @@ module.exports = (sequelize, DataTypes) => {
 
       // Design can have only one Order
       // Design has a one-to-many relationship with Order
-      Design.belongsTo(models.Orders, {foreignKey: 'order_id'})
+      Design.belongsTo(models.Orders, {foreignKey: 'orderId'})
     }
   };
   Design.init({
     name: DataTypes.STRING,
     image: DataTypes.STRING,
-    order_id: DataTypes.INTEGER,
+    orderId: DataTypes.INTEGER,
   }, {
     sequelize,
     modelName: 'Design',

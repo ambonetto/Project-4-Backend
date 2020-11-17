@@ -14,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
 
       // Order can have many designs
       // Order has a many-to-one relationship with Design
-      Orders.hasMany(models.Design, {foreignKey:'order_id'})
+      Orders.hasMany(models.Design, {foreignKey:'orderId'})
     }
   };
   Orders.init({

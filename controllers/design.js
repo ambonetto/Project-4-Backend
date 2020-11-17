@@ -38,7 +38,7 @@ const deleteDesign = (req, res) => {
         })
         // return the promise object
         .then(() => {
-            res.send('Success!');
+            res.send('Success! Design has been deleted');
         })
     })
     .catch(err => {

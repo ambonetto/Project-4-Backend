@@ -15,7 +15,7 @@ router.get('/', ctrl.design.allDesign);
 router.post('/new', ctrl.design.newDesign);
 
 // this is deleting a design for the client
-router.delete('/', ctrl.design.deleteDesign);
+router.delete('/:designId', ctrl.design.deleteDesign);
 
 // exporting router
 module.exports = router;

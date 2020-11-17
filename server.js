@@ -53,7 +53,7 @@ const verifyToken = (req, res, next) => {
 
         // set the decoded payload to req object as the user information (username, id)
         req.user = decodedUser;
-        console.log(req.user)
+
         // for controller to go to the next line of the code
         next();
     })

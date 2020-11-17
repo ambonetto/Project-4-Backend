@@ -66,7 +66,8 @@ app.use('/user', verifyToken, routes.user);
 app.use('/auth/verify', verifyToken, routes.auth);
 app.use('/profile', verifyToken, routes.user);
 app.use('/designs', verifyToken, routes.design);
-app.use('/placeorder', verifyToken, routes.type)
+app.use('/placeorder', verifyToken, routes.type);
+app.use('/placeorder', verifyToken, routes.color);
 
 // running the app on a port 
 app.listen(process.env.PORT, () => {

@@ -1,7 +1,7 @@
 // importing; letting controllers know about the type model
 const Type = require('../models').Type;
 
-// for get (show profile): sending the informaiton back to the client
+// for get (show type): sending the informaiton back to the client
 const allTypes = (req, res) => {
     Type.findAll()
 

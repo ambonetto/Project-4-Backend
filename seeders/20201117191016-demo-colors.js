@@ -12,7 +12,7 @@ module.exports = {
      * }], {});
     */
    await queryInterface.bulkInsert (
-    "Colors",
+    "colors",
     [
       {
         color: "Black",
@@ -59,7 +59,7 @@ module.exports = {
   },
 
   down: async (queryInterface, Sequelize) => {
-    await queryInterface.bulkDelete('Colors', null, {})
+    await queryInterface.bulkDelete('colors', null, {})
     /**
      * Add commands to revert seed here.
      *

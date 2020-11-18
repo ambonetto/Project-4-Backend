@@ -24,23 +24,23 @@ JB Designs is an online application to bring to life custom screen printing desi
 ## Wireframe
 
 * All Designs Show Page: <br />
-![alt text](![alt text](https://github.com/ambonetto/Project-4-Backend/blob/master/Images/AllDesigns.png))
+![alt text](https://github.com/ambonetto/Project-4-Backend/blob/master/Images/AllDesigns.png)
 
 * See Images Folder: AllDesigns.png
 
 * All Shirts Show Page: <br />
-![alt text](![alt text](https://github.com/ambonetto/Project-4-Backend/blob/master/Images/AllShirts.png))
+![alt text](https://github.com/ambonetto/Project-4-Backend/blob/master/Images/AllShirts.png)
 
 * See Images Folder: AllShirts.png
 
 * Shirts Show Page: <br />
-![alt text](![alt text](https://github.com/ambonetto/Project-4-Backend/blob/master/Images/ShirtsShowpage.png))
+![alt text](https://github.com/ambonetto/Project-4-Backend/blob/master/Images/ShirtShowpage.png)
 
 * See Images Folder: ShirtsShowpage.png
 
 ## Flow Diagram
 
-![alt text](https://github.com/ambonetto/Project-4-Frontend/blob/master/Images/FlowDiagram.png)
+![alt text](https://github.com/ambonetto/Project-4-Backend/blob/master/Images/FlowDiagram.png)
 
 * See Images Folder: FlowDiagram.png
 

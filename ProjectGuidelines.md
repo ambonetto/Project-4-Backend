@@ -10,17 +10,17 @@
 ## Wirefames:
 
 * All Designs Show Page: <br />
-![alt text](![alt text](https://github.com/ambonetto/Project-4-Backend/blob/master/Images/AllDesigns.png))
+![alt text](https://github.com/ambonetto/Project-4-Backend/blob/master/Images/AllDesigns.png)
 
 * See Images Folder: AllDesigns.png
 
 * All Shirts Show Page: <br />
-![alt text](![alt text](https://github.com/ambonetto/Project-4-Backend/blob/master/Images/AllShirts.png))
+![alt text](https://github.com/ambonetto/Project-4-Backend/blob/master/Images/AllShirts.png)
 
 * See Images Folder: AllShirts.png
 
 * Shirts Show Page: <br />
-![alt text](![alt text](https://github.com/ambonetto/Project-4-Backend/blob/master/Images/ShirtsShowpage.png))
+![alt text](https://github.com/ambonetto/Project-4-Backend/blob/master/Images/ShirtShowpage.png)
 
 * See Images Folder: ShirtsShowpage.png
 
